@@ -1,0 +1,17 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a57bf3;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

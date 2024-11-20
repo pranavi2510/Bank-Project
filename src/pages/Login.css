@@ -1,0 +1,107 @@
+/* Login.css */
+
+/* Header Styling */
+h2 {
+  color: #004aad; /* Corporate blue */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Login Container Styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #004aad, #0077d9); /* Blue gradient background */
+}
+
+/* Login Card Styling */
+.login-card {
+  background-color: #ffffff; /* White card for contrast */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focused Input and Select */
+input:focus,
+select:focus {
+  border-color: #004aad; /* Highlighted border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 74, 173, 0.5);
+}
+
+/* Button Styling */
+button {
+  background-color: #004aad; /* Deep blue */
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #003580; /* Darker blue for hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Error Message Styling */
+.error {
+  color: #ff4d4d; /* Red for errors */
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Success Message Styling */
+.success {
+  color: #28a745; /* Green for success */
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Register Link Styling */
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #004aad; /* Blue link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+  color: #0077d9; /* Brighter blue on hover */
+  text-decoration: underline;
+}

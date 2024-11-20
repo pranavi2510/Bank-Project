@@ -1,0 +1,75 @@
+/* Help Page Container */
+.help-container {
+  text-align: center;
+  padding: 8rem 2rem;
+  color: #333;
+  background-color: #f0f8ff; /* Light blue background for a calming, professional look */
+}
+
+/* Help Page Title */
+.help-container h2 {
+  color: #004085; /* Dark blue for the title to represent trust and professionalism */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #1a73e8; /* Subtle underline effect */
+  padding-bottom: 0.5rem;
+}
+
+/* Help Page Description */
+.help-container p {
+  font-size: 1.2rem;
+  color:darkviolet; /* Neutral grey for the paragraph text for easy readability */
+  margin-bottom: 2rem;
+  line-height: 1.6; /* Improved readability */
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Button Styling */
+.help-container button {
+  background-color: #007bff; /* Bright blue for the button to stand out */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 2rem;
+}
+
+.help-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover for better user interaction */
+  transform: translateY(-2px);
+}
+
+.help-container button:active {
+  transform: translateY(1px); /* Slight inward push effect on click */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .help-container {
+      padding: 4rem 1.5rem;
+  }
+
+  .help-container h2 {
+      font-size: 2rem; /* Adjusting title size for mobile */
+  }
+
+  .help-container p {
+      font-size: 1rem; /* Adjusting text size for better readability on smaller screens */
+  }
+
+  .help-container button {
+      width: 100%; /* Full-width button on mobile for easy interaction */
+  }
+}
+.contact{
+  background-color: #72b8d8;
+  color: #f0f8ff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

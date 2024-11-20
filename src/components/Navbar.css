@@ -1,0 +1,110 @@
+/* Navbar Styles */
+nav {
+  background: linear-gradient(to right, #004aad, #0077d9); /* Corporate blue gradient */
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  border-bottom: 3px solid #003580; /* Dark blue separator */
+  font-family: 'Arial', sans-serif;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav h1:hover {
+  color: #d1e8ff; /* Light blue for hover */
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: transparent; /* No background by default */
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #003580; /* Dark blue for hover */
+  color: #ffffff;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Underline Effect */
+nav ul li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #00aaff; /* Bright blue underline */
+  top: 100%;
+  left: 0;
+  transition: width 0.4s ease;
+}
+
+nav ul li:hover::before {
+  width: 100%;
+}
+
+/* Navbar Link Hover Animation */
+nav ul li:hover {
+  color: #d1e8ff;
+}
+
+/* Button in Navbar */
+nav ul li button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #003580;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li button:hover {
+  background-color: #0056b3; /* Slightly lighter blue for hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+    flex-direction: column; /* Stack links for smaller screens */
+    align-items: center;
+  }
+
+  nav h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+}

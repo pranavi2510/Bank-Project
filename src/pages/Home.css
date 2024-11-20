@@ -1,0 +1,93 @@
+/* Home.css */
+
+/* Home Container */
+.home-container {
+  background-color: #147fd6; /* Soft blue background */
+  color: #003366; /* Deep blue for text */
+  width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo-placeholder {
+  background-color: #004aad; /* Solid blue for logo placeholder */
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Title Section */
+.title-section h2 {
+  background: linear-gradient(to right, #003580, #0077d9); /* Blue gradient for title */
+  padding: 12px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for title */
+}
+
+/* Services Section */
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Service Button */
+.service-button {
+  background-color: #004aad; /* Deep blue background */
+  color: #ffffff;
+  border: none; /* No border for clean look */
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.service-button:hover {
+  background-color: #003580; /* Darker blue for hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
